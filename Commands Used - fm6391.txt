@@ -1,0 +1,23 @@
+﻿The following is a line of every command used in Assignment 2:
+
+
+1. gpg --symmetric plaintext.txt
+2. cat plaintext.txt.gpg
+3. gpg --symmetric -a plaintext.txt.asc
+4. cat plaintext.txt.asc
+5. gpg --import csmith.pub.key
+6. gpg --list-keys
+7. gpg --gen-key
+8. gpg --export -a > fm6391.public.key
+9. gpg -a --output plaintext.txt.asc.sig --sign plaintext.txt
+10. gpg -e -a -u “Brooklyn Dressel” -r “Chris” plaintext.txt.asc.sig
+11. nc -l 10.0.2.15 -p 31337 -q 1 > ciphertxt.txt.asc < /dev/null
+12. nc 10.0.2.15 31337 plaintext.txt.asc.sig.asc
+13. cat ciphertxt.txt.asc
+14. sudo apt-get update
+15. sudo apt-get install steghide
+16. steghide embed -cf sadcat.jpg -ef plaintext.txt -sf steg_image.jpg
+17. steghide extract -sf steg_image.jpg
+18. md5sum sadcat.jpg
+19. md5sum steg_image.jpg
+20. md5sum sadIMAGEcat.jpg

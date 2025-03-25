@@ -1,0 +1,23 @@
+﻿1. python -m http.server 8080 –bind 0.0.0.0
+2. ip addr
+3. host -t a www.facebook.com
+4. who is 157.240.22.35 | grep CIDR
+5. sudo iptables -A OUTPUT -p tcp -d 157.240.0.0/16 -j DROP
+6. sudo iptables -L -v -n
+7. sudo iptables -A INPUT -p tcp –dport 8080 -j DROP
+8. sudo iptables -L -v -n | grep 8080
+9. sudo iptables -A INPUT -m mac –-mac-source 08:00:27:c6:4c:93 -j DROP
+10. sudo iptables -L -v -n | grep 08:00:27:c6:4c:93
+11. sudo service ssh start
+12. sudo macchanger eth0 -r
+13. ssh kali@10.0.0.228
+14. sudo iptables -D INPUT -m mac –-mac-source 08:00:27:c6:4c:93 -j DROP
+15. sudo iptables -A INPUT -p tcp --dport 22 -j DROP
+16. sudo iptables -L -v -n | grep 22
+17. sudo iptables -D INPUT -p tcp --dport 22 -j DROP
+18. cat /proc/sys/net/ipv4/ip_forward
+19. echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward
+20. sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080
+21. wget -o- http://134.154.79.231
+22. sudo iptables -t nat -nvL PREROUTING
+23. sudo service ssh stop
