@@ -1,4 +1,6 @@
-﻿1. python -m http.server 8080 –bind 0.0.0.0
+﻿The following is a list of every command used in Assignment 4:
+
+1. python -m http.server 8080 –bind 0.0.0.0
 2. ip addr
 3. host -t a www.facebook.com
 4. who is 157.240.22.35 | grep CIDR
